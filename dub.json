@@ -1,0 +1,9 @@
+{
+	"name": "mir-internal",
+	"authors": [
+		"Ilya Yaroshenko"
+	],
+	"description": "Generic utilities for Mir projects",
+	"copyright": "Copyright © 2016, Ilya Yaroshenko",
+	"license": "BSL-1.0"
+}
