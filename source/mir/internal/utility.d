@@ -8,11 +8,6 @@ version(Have_mir)
 else
     import std.experimental.ndslice.slice;
 
-version(LDC)
-{
-    pragma(LDC_no_moduleinfo);
-}
-
 alias Iota(size_t j) = Iota!(0, j);
 
 template Iota(size_t i, size_t j)
