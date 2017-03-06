@@ -5,5 +5,6 @@
 	],
 	"description": "Generic utilities for Mir projects",
 	"copyright": "Copyright © 2016, Ilya Yaroshenko",
-	"license": "BSL-1.0"
+	"license": "BSL-1.0",
+	"targetType": "sourceLibrary"
 }
