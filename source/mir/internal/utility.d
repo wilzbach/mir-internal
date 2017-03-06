@@ -3,7 +3,18 @@ module mir.internal.utility;
 import std.traits;
 import std.meta;
 
-import mir.ndslice.slice;
+version(Have_mir)
+    import mir.ndslice.slice;
+else
+version(Have_mir_algorithm)
+    import mir.ndslice.slice;
+else
+    import std.experimental.ndslice.slice;
+
+version(LDC)
+{
+    pragma(LDC_no_moduleinfo);
+}
 
 alias Iota(size_t j) = Iota!(0, j);
 
